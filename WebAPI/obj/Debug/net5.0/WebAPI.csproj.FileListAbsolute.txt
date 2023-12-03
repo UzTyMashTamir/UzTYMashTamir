@@ -1,0 +1,212 @@
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.exe
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.deps.json
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.json
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.dev.json
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\ref\WebAPI.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\WebAPI.pdb
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Npgsql.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Contracts.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Entities.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Repository.dll
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Repository.pdb
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Contracts.pdb
+C:\Users\user\source\repos\Chilling\WebAPI\bin\Debug\net5.0\Entities.pdb
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.xml
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.dll
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.pdb
+C:\Users\user\source\repos\Chilling\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\appsettings.Development.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\appsettings.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.exe
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.deps.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.dev.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\ref\WebAPI.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\AutoMapper.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Humanizer.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Npgsql.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Contracts.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Entities.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Repository.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Repository.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Contracts.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Entities.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.xml
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\appsettings.Development.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\appsettings.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.exe
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.deps.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.dev.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\ref\WebAPI.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\WebAPI.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\AutoMapper.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Humanizer.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Npgsql.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Contracts.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Entities.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Repository.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Repository.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Contracts.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\bin\Debug\net5.0\Entities.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.xml
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\appsettings.Development.json
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\appsettings.json
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.exe
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.deps.json
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.json
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.runtimeconfig.dev.json
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\ref\WebAPI.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\WebAPI.pdb
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\AutoMapper.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Humanizer.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Npgsql.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Contracts.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Entities.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Repository.dll
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Repository.pdb
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Contracts.pdb
+e:\UzTYMashTamirSolution\WebAPI\bin\Debug\net5.0\Entities.pdb
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.AssemblyReference.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfoInputs.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.AssemblyInfo.cs
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CoreCompileInputs.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.MvcApplicationPartsAssemblyInfo.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\staticwebassets\WebAPI.StaticWebAssets.xml
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\scopedcss\bundle\WebAPI.styles.css
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.RazorTargetAssemblyInfo.cache
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.csproj.CopyComplete
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.dll
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\ref\WebAPI.dll
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.pdb
+e:\UzTYMashTamirSolution\WebAPI\obj\Debug\net5.0\WebAPI.genruntimeconfig.cache

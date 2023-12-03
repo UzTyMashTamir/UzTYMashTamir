@@ -1,0 +1,60 @@
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\Contracts.deps.json
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\Contracts.dll
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\Contracts.pdb
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\Entities.dll
+C:\Users\user\source\repos\Chilling\Contracts\bin\Debug\net5.0\Entities.pdb
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.dll
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+C:\Users\user\source\repos\Chilling\Contracts\obj\Debug\net5.0\Contracts.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.deps.json
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Entities.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Entities.pdb
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+c:\Users\user\source\repos\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\Contracts.deps.json
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\Contracts.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\Contracts.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\Entities.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\bin\Debug\net5.0\Entities.pdb
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+E:\UzTYMashTamirSolution  12.11.2023  1735\Contracts\obj\Debug\net5.0\Contracts.pdb
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.deps.json
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.dll
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Contracts.pdb
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Entities.dll
+e:\UzTYMashTamirSolution\Contracts\bin\Debug\net5.0\Entities.pdb
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.dll
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+e:\UzTYMashTamirSolution\Contracts\obj\Debug\net5.0\Contracts.pdb
