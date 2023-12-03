@@ -12,7 +12,7 @@ namespace Entities.DTO.AnualyPlanTwo
         public int a_o_id { get; set; }
         public LocomativeInformation locomative_name { get; set; }
         public int sections_reprair_number { get; set; }
-        public ReprairType reprair_type { get; set; }
+        public string reprairtype { get; set; }
 
     }
 }

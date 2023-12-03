@@ -904,11 +904,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
+      "projectPath": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "e:\\UzTYMashTamirSolution\\Contracts\\obj\\",
+      "outputPath": "E:\\UzTYMashTamirSolution\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -929,8 +929,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
-              "projectPath": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj"
+            "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
+              "projectPath": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj"
             }
           }
         }

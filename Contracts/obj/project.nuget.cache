@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "41egSYTB0a2Kak2p59wa05myHP/UWIxvFDRYM4tMfUvrlUeIGQS+OiBZyg0ORcgfkBU2wD4iXU8cNcIOJF/tdA==",
+  "dgSpecHash": "3Te1CL5IcaEL6NJ7G7q0c5h1Jnc3Vge1ZNj7zqFsGgu3F4bfImdliVq1SCS2mOuOJ4tgMH4KeliQ4dR68EgGPw==",
   "success": true,
-  "projectFilePath": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
+  "projectFilePath": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

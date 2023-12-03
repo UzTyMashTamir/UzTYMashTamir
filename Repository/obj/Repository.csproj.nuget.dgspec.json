@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj": {}
+    "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
+    "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
+        "projectPath": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "e:\\UzTYMashTamirSolution\\Contracts\\obj\\",
+        "outputPath": "E:\\UzTYMashTamirSolution\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
-                "projectPath": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj"
+              "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
+                "projectPath": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
+    "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
+        "projectUniqueName": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
+        "projectPath": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "e:\\UzTYMashTamirSolution\\Entities\\obj\\",
+        "outputPath": "E:\\UzTYMashTamirSolution\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -148,14 +148,14 @@
         }
       }
     },
-    "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj": {
+    "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
+        "projectPath": "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "e:\\UzTYMashTamirSolution\\Repository\\obj\\",
+        "outputPath": "E:\\UzTYMashTamirSolution\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -176,8 +176,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
-                "projectPath": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj"
+              "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
+                "projectPath": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj"
               }
             }
           }

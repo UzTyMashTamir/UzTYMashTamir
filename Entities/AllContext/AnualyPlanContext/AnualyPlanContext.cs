@@ -90,13 +90,16 @@ namespace Entities.AllContext.AnualyPlanContext
             List<AnualyPlan> anualyPlans = new();
             DataTable table = null;
             string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
-            string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, locomative_information.name,locomative_information.fuel_type_id," +
-                    "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date, anualy_plan.information_entered_date," +
-                    "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
-                    "anualy_plan.plan_year, anualy_plan.reprair_id, anualy_plan.all_price FROM locomative_information " +
-                    "INNER JOIN " +
-                    "anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id " +
-                    "WHERE anualy_plan.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
+            string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, " +
+                "locomative_information.name,locomative_information.fuel_type_id," +
+                "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date," +
+                "anualy_plan.information_entered_date," +
+                "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
+                "anualy_plan.plan_year, reprair_type.type, anualy_plan.all_price FROM locomative_information" +
+                " INNER JOIN" +
+                " anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id " +
+                " WHERE anualy_plan.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
 
 
 
@@ -133,13 +136,16 @@ namespace Entities.AllContext.AnualyPlanContext
             DataTable table = null;
             AnualyPlan anualyPlan = null;
 
-            string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, locomative_information.name,locomative_information.fuel_type_id," +
-                    "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date, anualy_plan.information_entered_date," +
-                    "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
-                    "anualy_plan.plan_year, anualy_plan.reprair_id, anualy_plan.all_price FROM locomative_information " +
-                    "INNER JOIN " +
-                    "anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id " +
-                    "WHERE anualy_plan.anualy_id=@anualy_id;";
+            string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, " +
+                "locomative_information.name,locomative_information.fuel_type_id," +
+                "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date," +
+                "anualy_plan.information_entered_date," +
+                "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
+                "anualy_plan.plan_year, reprair_type.type, anualy_plan.all_price FROM locomative_information" +
+                " INNER JOIN" +
+                " anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id " +
+                " WHERE anualy_plan.anualy_id=@anualy_id;";
             try
             {
                 conn.Open();
@@ -308,13 +314,15 @@ namespace Entities.AllContext.AnualyPlanContext
                 string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
                 string query = "SELECT  locomative_information.loco_id, locomative_information.name, " +
                     "locomative_information.fuel_type_id, " +
-                    "anualy_plan.sections_repraer_number, anualy_plan.reprair_id, anualy_plan_one.a_o_id, " +
+                    "anualy_plan.sections_repraer_number, reprair_type.type, anualy_plan_one.a_o_id, " +
                     "anualy_plan_one.information_confirmed_date, " +
-                    "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, anualy_plan_one.aprel, " +
+                    "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, anualy_plan_one.aprel," +
                     "anualy_plan_one.may, anualy_plan_one.iyun, anualy_plan_one.iyul, anualy_plan_one.avgust, " +
-                    "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, anualy_plan_one.dekabr" +
+                    "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, " +
+                    "anualy_plan_one.dekabr" +
                     " FROM locomative_information" +
                     " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
                     " INNER JOIN anualy_plan_one ON anualy_plan_one.anualy_id = anualy_plan.anualy_id" +
                     " WHERE anualy_plan_one.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
 
@@ -352,17 +360,17 @@ namespace Entities.AllContext.AnualyPlanContext
             AnualyPlan anualyPlan = null;
 
             string query = "SELECT  locomative_information.loco_id, locomative_information.name, " +
-                "locomative_information.fuel_type_id, " +
-                "anualy_plan.sections_repraer_number, anualy_plan.reprair_id, anualy_plan_one.a_o_id, " +
-                "anualy_plan_one.information_confirmed_date,  " +
-                "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, " +
-                "anualy_plan_one.aprel, " +
-                "anualy_plan_one.may, anualy_plan_one.iyun, anualy_plan_one.iyul, anualy_plan_one.avgust," +
-                "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, " +
-                "anualy_plan_one.dekabr" +
-                " FROM locomative_information" +
-                " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
-                " INNER JOIN anualy_plan_one ON anualy_plan_one.anualy_id = anualy_plan.anualy_id" +
+                    "locomative_information.fuel_type_id, " +
+                    "anualy_plan.sections_repraer_number, reprair_type.type, anualy_plan_one.a_o_id, " +
+                    "anualy_plan_one.information_confirmed_date, " +
+                    "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, anualy_plan_one.aprel," +
+                    "anualy_plan_one.may, anualy_plan_one.iyun, anualy_plan_one.iyul, anualy_plan_one.avgust, " +
+                    "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, " +
+                    "anualy_plan_one.dekabr" +
+                    " FROM locomative_information" +
+                    " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
+                    " INNER JOIN anualy_plan_one ON anualy_plan_one.anualy_id = anualy_plan.anualy_id" +
                 " WHERE anualy_plan_one.a_o_id=@a_o_id;";
             try
             {
@@ -460,9 +468,10 @@ namespace Entities.AllContext.AnualyPlanContext
                 string query = "SELECT  anualy_plan_one.a_o_id, locomative_information.loco_id, " +
                     "locomative_information.name," +
                     "locomative_information.fuel_type_id," +
-                    "anualy_plan.sections_repraer_number, anualy_plan.reprair_id" +
+                    "anualy_plan.sections_repraer_number, reprair_type.type" +
                     " FROM locomative_information" +
-                    " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +          
+                    " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
                     " INNER JOIN anualy_plan_one ON anualy_plan_one.anualy_id = anualy_plan.anualy_id" +
                     " WHERE anualy_plan_one.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
 

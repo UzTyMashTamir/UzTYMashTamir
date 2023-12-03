@@ -14,7 +14,7 @@ namespace Entities.DTO.AnualyPlan
         public LocomativeInformation locomative_name { get; set; }
         public double all_price { get; set; }
         public int sections_reprair_number { get; set; }
-        public ReprairType reprair_type { get; set; }
+        public string reprairtype { get; set; }
         public DateTime information_confirmed_date { get; set; }
         public DateTime information_entered_date { get; set; }
         public DateTime information_modified_date { get; set; }
