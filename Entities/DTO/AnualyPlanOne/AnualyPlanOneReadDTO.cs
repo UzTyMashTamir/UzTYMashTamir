@@ -12,7 +12,7 @@ namespace Entities.DTO.AnualyPlanOne
         public int a_o_id { get; set; }
         public LocomativeInformation locomative_name { get; set; }
         public int sections_reprair_number { get; set; }
-        public ReprairType reprair_type { get; set; }
+        public string reprairtype { get; set; }
         public DateTime information_confirmed_date { get; set; }
         public MonthPlan month_plan { get; set; }
     }

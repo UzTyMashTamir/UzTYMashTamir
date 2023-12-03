@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {}
+    "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
+    "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
+        "projectUniqueName": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "e:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
+        "projectPath": "E:\\UzTYMashTamirSolution\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "e:\\UzTYMashTamirSolution\\Entities\\obj\\",
+        "outputPath": "E:\\UzTYMashTamirSolution\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

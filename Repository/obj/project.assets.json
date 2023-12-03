@@ -922,11 +922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
+      "projectUniqueName": "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "e:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
+      "projectPath": "E:\\UzTYMashTamirSolution\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "e:\\UzTYMashTamirSolution\\Repository\\obj\\",
+      "outputPath": "E:\\UzTYMashTamirSolution\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -947,8 +947,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
-              "projectPath": "e:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj"
+            "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj": {
+              "projectPath": "E:\\UzTYMashTamirSolution\\Contracts\\Contracts.csproj"
             }
           }
         }

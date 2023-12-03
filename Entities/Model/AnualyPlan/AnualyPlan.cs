@@ -14,6 +14,7 @@ namespace Entities.Model.AnualyPlan
         public int anualy_id { get; set; }
         public LocomativeInformation locomative_name { get; set; }
         public int sections_reprair_number { get; set; }
+        public string reprairtype { get; set; }
         public ReprairType reprair_type { get; set; }
         public DateTime information_confirmed_date { get; set; }
         public DateTime information_entered_date { get; set; }
@@ -40,7 +41,7 @@ namespace Entities.Model.AnualyPlan
                 loco_id = int.Parse("" + row["loco_id"]), 
             };
             sections_reprair_number = int.Parse("" + row["sections_repraer_number"]);
-            reprair_type = (ReprairType)(Convert.ToInt32(row["reprair_id"]));
+            reprairtype = row["type"].ToString(); 
             information_confirmed_date = Convert.ToDateTime(row["information_confirmed_date"]);
             information_entered_date = Convert.ToDateTime(row["information_entered_date"]);
             try
@@ -74,7 +75,7 @@ namespace Entities.Model.AnualyPlan
             };
             sections_reprair_number = int.Parse("" + row["sections_repraer_number"]);
             a_o_id = int.Parse("" + row["a_o_id"]);
-            reprair_type = (ReprairType)(Convert.ToInt32(row["reprair_id"]));
+            reprairtype = row["type"].ToString(); 
             information_confirmed_date = Convert.ToDateTime(row["information_confirmed_date"]);
             month_plan = new MonthPlan
             {
@@ -103,8 +104,8 @@ namespace Entities.Model.AnualyPlan
                 fuel_type = (FuelType)(Convert.ToInt32(row["fuel_type_id"])),
             };
             sections_reprair_number = int.Parse("" + row["sections_repraer_number"]);
-            reprair_type = (ReprairType)(Convert.ToInt32(row["reprair_id"]));
-            
+            reprairtype = row["type"].ToString(); 
+
         }
     }
 }

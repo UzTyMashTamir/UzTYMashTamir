@@ -8,6 +8,7 @@ namespace Entities.Model.All
 {
     public class OrganizationType
     {
+        public int org_id { get; set; }
         public string type { get; set; }
     }
 }
