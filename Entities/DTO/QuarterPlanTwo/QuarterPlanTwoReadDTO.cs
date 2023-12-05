@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Model.QuarterPlan;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Entities.DTO.QuarterPlanTwo
     public class QuarterPlanTwoReadDTO
     {
         public int q_pt_id { get; set; }
-        public Model.QuarterPlan.QuarterPlan quarter_plan { get; set; }
+        public QuarterPlanReaded quarter_plan { get; set; }
         public int section_1 { get; set; }
         public int section_2 { get; set; }
         public int section_3 { get; set; }

@@ -180,7 +180,7 @@ namespace Entities.AllContext.AnualyPlanContext
             {
                 try
                 {
-                    anualyPlan.status = StatusEnum.active;
+                    anualyPlan.status = StatusEnum.updated;
                     anualyPlan.locomative_name.loco_id = locomativeGetId(anualyPlan.locomative_name.name);
                     anualyPlan.locomative_name.fuel_type = (FuelType)locomativeGettypeId(anualyPlan.locomative_name.loco_id);
 
@@ -371,7 +371,7 @@ namespace Entities.AllContext.AnualyPlanContext
                     " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
                     " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
                     " INNER JOIN anualy_plan_one ON anualy_plan_one.anualy_id = anualy_plan.anualy_id" +
-                " WHERE anualy_plan_one.a_o_id=@a_o_id;";
+                " WHERE anualy_plan_one.a_o_id=@a_o_id AND anualy_plan_one.status_id != 2;";
             try
             {
                 conn.Open();

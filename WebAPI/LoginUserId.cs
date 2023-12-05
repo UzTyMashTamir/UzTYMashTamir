@@ -7,6 +7,6 @@ namespace WebAPI
 {
     public class LoginUserId
     {
-        public static int loginId { get; set; }
+        public static int loginId { get; set; } = 1;
     }
 }

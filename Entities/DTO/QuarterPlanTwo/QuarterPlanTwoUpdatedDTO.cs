@@ -8,7 +8,7 @@ namespace Entities.DTO.QuarterPlanTwo
 {
     public class QuarterPlanTwoUpdatedDTO
     {
-        public int q_pt_id { get; set; }
+        public int quarter_id { get; set; }
         public int section_1 { get; set; }
         public int section_2 { get; set; }
         public int section_3 { get; set; }
