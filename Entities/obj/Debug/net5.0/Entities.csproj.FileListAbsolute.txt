@@ -56,4 +56,4 @@ e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.dll
 e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\ref\Entities.dll
 e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.pdb
 e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache

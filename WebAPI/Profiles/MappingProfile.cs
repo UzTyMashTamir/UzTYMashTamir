@@ -2,14 +2,19 @@
 using Entities.DTO.AnualyPlan;
 using Entities.DTO.AnualyPlanOne;
 using Entities.DTO.AnualyPlanTwo;
+using Entities.DTO.MonthPlan;
+using Entities.DTO.MonthPlanOne;
 using Entities.DTO.QuarterPlan;
 using Entities.DTO.QuarterPlanTwo;
 using Entities.DTO.User;
 using Entities.DTO.User.UserCrud;
+using Entities.DTO.WeeklyPlan;
 using Entities.Model.All;
 using Entities.Model.AnualyPlan;
+using Entities.Model.MonthPlanModel;
 using Entities.Model.QuarterPlan;
 using Entities.Model.User;
+using Entities.Model.WeeklyPlanModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,6 +64,22 @@ namespace WebAPI.Profiles
             CreateMap<QuarterPlanTwo, QuarterPlanTwoReadDTO>();
             CreateMap<QuarterPlanTwoCreateDTO, QuarterPlanTwo>();
             CreateMap<QuarterPlanTwoUpdatedDTO, QuarterPlanTwo>();
+
+
+            //   Month Plan
+            CreateMap<MonthPlanOne, MonthPlanDTO>();
+
+
+            //   Month Plan Two
+            CreateMap<MonthPlanOne, MonthPlanOneReadDTO>();
+            CreateMap<MonthPlanOneCreateDTO, MonthPlanOne>();
+            CreateMap<MonthPlanOneUpdatedDTO, MonthPlanOne>();
+
+
+            //   Weekly Plan
+            CreateMap<WeeklyPlan, WeeklyPlanReadDTO>();
+            CreateMap<WeeklyPlanCreateDTO, WeeklyPlan>();
+            CreateMap<WeeklyPlanUpdatedDTO, WeeklyPlan>();
         }
        
     }

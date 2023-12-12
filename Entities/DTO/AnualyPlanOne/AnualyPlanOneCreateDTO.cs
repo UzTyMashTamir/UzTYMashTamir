@@ -11,6 +11,6 @@ namespace Entities.DTO.AnualyPlanOne
     {
         public int anualy_id { get; set; }
         public DateTime information_confirmed_date { get; set; }
-        public MonthPlan month_plan { get; set; }
+        public Model.All.MonthPlan month_plan { get; set; }
     }
 }

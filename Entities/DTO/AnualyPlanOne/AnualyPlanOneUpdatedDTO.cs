@@ -10,6 +10,6 @@ namespace Entities.DTO.AnualyPlanOne
     public class AnualyPlanOneUpdatedDTO
     {
         public DateTime information_confirmed_date { get; set; }
-        public MonthPlan month_plan { get; set; }
+        public Model.All.MonthPlan month_plan { get; set; }
     }
 }

@@ -26,6 +26,8 @@ using Entities.AllContext.AnualyPlanContext;
 using Contracts.Plan;
 using Repository.Plan;
 using Entities.AllContext.QuarterPlanContex;
+using Entities.AllContext.MonthPlanContext;
+using Entities.AllContext.WeeklyPlanContex;
 
 namespace WebAPI
 {
@@ -88,6 +90,16 @@ namespace WebAPI
             //Quarter Plan
             services.AddScoped<IQuarterPlanRepository, QuarterPlanSqlRepo>();
             services.AddScoped<QuaretrPlanContext>();
+
+            //Month Plan
+            services.AddScoped<IMonthPlanRepository, MonthPlanSqlRepository>();
+            services.AddScoped<MonthPlanContex>();
+
+
+            //Weekly Plan
+            services.AddScoped<IWeeklyPlanRepository, WeeklyPlanSqlRepository>();
+            services.AddScoped<WeeklyPlanContext>();
+
 
 
 

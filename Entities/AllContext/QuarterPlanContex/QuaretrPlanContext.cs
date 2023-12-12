@@ -105,7 +105,9 @@ namespace Entities.AllContext.QuarterPlanContex
         {
             List<QuarterPlan> quarterPlans = new();
             DataTable table = null;
-            string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
+            try
+            {
+                string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
             string query = "SELECT quarter_plan.quarter_id, locomative_information.loco_id,locomative_information.name AS name_loco," +
                 "fuel_type.type AS fuel_type," +
                 "quarter_plan.locomative_number, organization.name, reprair_type.type, " +
@@ -134,8 +136,7 @@ namespace Entities.AllContext.QuarterPlanContex
                     da.Fill(table);
                 }
             }
-            try
-            { }
+            }
             catch { }
             finally { conn.Close(); }
 
