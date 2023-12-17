@@ -10,6 +10,8 @@ namespace Entities.Model.User
     {
         active=1,
         deleted=2,
-        updated=3
+        updated=3,
+        workdone=4,
+        addition=5
     }
 }

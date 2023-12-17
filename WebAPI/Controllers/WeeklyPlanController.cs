@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
 
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPost("createweeklyplan")]
         public IActionResult CreateWeeklyPlan(WeeklyPlanCreateDTO planCreateDTO)
         {
@@ -40,31 +40,29 @@ namespace WebAPI.Controllers
 
             _repository.CreateWeekluPlan(weeklyPlanModel, onlineIdUser);
 
-            var weeklyPlanReadDto = _mapper.Map<WeeklyPlanReadDTO>(weeklyPlanModel);
-
             return Created("", "");
         }
 
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpGet("getallweeklyplan")]
-        public IActionResult GetWeeklyPlan(int year,int month,int week, int queryNum)
+        public IActionResult GetWeeklyPlan(DateTime week_date, int queryNum)
         {
-            var weeklyPlans = _repository.GetAllYearWeekluPlan(year,month,week, queryNum);
+            var weeklyPlans = _repository.GetAllYearWeekluPlan(week_date,queryNum);
 
             return Ok(_mapper.Map<IEnumerable<WeeklyPlanReadDTO>>(weeklyPlans));
         }
 
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpGet("getbyidweeklyplan/{id}")]
         public IActionResult GetWeeklyPlanById(int id)
         {
             var weeklyPlan = _repository.GetWeekluPlanByID(id);
 
-            if (weeklyPlan == null  /*||weeklyPlan.status == StatusEnum.deleted*/)
+            if (weeklyPlan == null)
             {
                 return NotFound();
             }
@@ -75,7 +73,7 @@ namespace WebAPI.Controllers
 
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpDelete("deleteweeklyplan/{id}")]
         public IActionResult DeleteWeeklyPlan(int id)
         {
@@ -94,7 +92,7 @@ namespace WebAPI.Controllers
 
 
 
-        //[Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin")]
         [HttpPut("updateweeklyplan/{id}")]
         public IActionResult UpdateWeeklyPlan(int id, WeeklyPlanUpdatedDTO weeklyPlanUpdatedDTO)
         {
@@ -107,7 +105,7 @@ namespace WebAPI.Controllers
             WeeklyPlan mapWeeklyPlan = _mapper.Map<WeeklyPlan>(weeklyPlanUpdatedDTO);
             _repository.UpdateWeekluPlan(id, mapWeeklyPlan, onlineIdUser);
             WeeklyPlan updateWeeklyPlan = _repository.GetWeekluPlanByID(id);
-            return Ok(_mapper.Map<WeeklyPlanCreateDTO>(updateWeeklyPlan));
+            return Ok(_mapper.Map<WeeklyPlanReadDTO>(updateWeeklyPlan));
         }
 
 

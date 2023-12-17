@@ -29,9 +29,9 @@ namespace Repository.Plan
             _context.DeleteWeekluPlan(id,loginiduser);
         }
 
-        public IEnumerable<WeeklyPlan> GetAllYearWeekluPlan(int year, int month, int week, int queryNum)
+        public IEnumerable<WeeklyPlan> GetAllYearWeekluPlan(DateTime week_date, int queryNum)
         {
-            var weeklyPlans = _context.GetAllYearWeekluPlan(year, month, week, queryNum);
+            var weeklyPlans = _context.GetAllYearWeekluPlan(week_date, queryNum);
             return weeklyPlans;
         }
 

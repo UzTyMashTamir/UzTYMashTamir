@@ -9,7 +9,7 @@ namespace Contracts.Plan
 {
     public interface IWeeklyPlanRepository
     {
-        public IEnumerable<WeeklyPlan> GetAllYearWeekluPlan(int year,int month, int week, int queryNum);
+        public IEnumerable<WeeklyPlan> GetAllYearWeekluPlan(DateTime week_date, int queryNum);
 
         public WeeklyPlan GetWeekluPlanByID(int id);
 

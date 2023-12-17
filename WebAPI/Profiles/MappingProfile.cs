@@ -2,6 +2,7 @@
 using Entities.DTO.AnualyPlan;
 using Entities.DTO.AnualyPlanOne;
 using Entities.DTO.AnualyPlanTwo;
+using Entities.DTO.DaylyPlan;
 using Entities.DTO.MonthPlan;
 using Entities.DTO.MonthPlanOne;
 using Entities.DTO.QuarterPlan;
@@ -11,6 +12,7 @@ using Entities.DTO.User.UserCrud;
 using Entities.DTO.WeeklyPlan;
 using Entities.Model.All;
 using Entities.Model.AnualyPlan;
+using Entities.Model.DaylyPlanModel;
 using Entities.Model.MonthPlanModel;
 using Entities.Model.QuarterPlan;
 using Entities.Model.User;
@@ -80,6 +82,12 @@ namespace WebAPI.Profiles
             CreateMap<WeeklyPlan, WeeklyPlanReadDTO>();
             CreateMap<WeeklyPlanCreateDTO, WeeklyPlan>();
             CreateMap<WeeklyPlanUpdatedDTO, WeeklyPlan>();
+
+
+            //   Dayly Plan
+            CreateMap<DaylyPlan, DaylyPlanReadedDTO>();
+            CreateMap<DaylyPlanCreatedDTO, DaylyPlan>();
+            CreateMap<DaylyPlanUpdatedDTO, DaylyPlan>();
         }
        
     }

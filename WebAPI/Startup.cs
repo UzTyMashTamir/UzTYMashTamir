@@ -28,6 +28,7 @@ using Repository.Plan;
 using Entities.AllContext.QuarterPlanContex;
 using Entities.AllContext.MonthPlanContext;
 using Entities.AllContext.WeeklyPlanContex;
+using Entities.AllContext.DaylyPlanContex;
 
 namespace WebAPI
 {
@@ -99,6 +100,11 @@ namespace WebAPI
             //Weekly Plan
             services.AddScoped<IWeeklyPlanRepository, WeeklyPlanSqlRepository>();
             services.AddScoped<WeeklyPlanContext>();
+
+
+            //Dayly Plan
+            services.AddScoped<IDaylyPlanRepository, DaylyPlanSqlRepository>();
+            services.AddScoped<DaylyPlanContext>();
 
 
 
