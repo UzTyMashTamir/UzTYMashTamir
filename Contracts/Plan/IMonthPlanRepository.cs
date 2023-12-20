@@ -18,7 +18,7 @@ namespace Contracts.Plan
 
         public MonthPlanOne GetMonthPlanOneByID(int id);
 
-        public void CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser);
+        public string CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser);
 
         public void UpdateMonthPlanOne(int id, MonthPlanOne monthPlan, int loginiduser);
 

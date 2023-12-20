@@ -19,7 +19,7 @@ namespace Entities.AllContext.QuarterPlanContex
 
         }
 
-        public void CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser)
+        public string CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser)
         {
             if (quarterPlan != null)
             {
@@ -70,10 +70,15 @@ namespace Entities.AllContext.QuarterPlanContex
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
         }
 
         public void DeleteQuarterPlan(int id, int loginiduser)
@@ -108,34 +113,34 @@ namespace Entities.AllContext.QuarterPlanContex
             try
             {
                 string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
-            string query = "SELECT quarter_plan.quarter_id, locomative_information.loco_id,locomative_information.name AS name_loco," +
-                "fuel_type.type AS fuel_type," +
-                "quarter_plan.locomative_number, organization.name, reprair_type.type, " +
-                "month.month, quarter_plan.section_num, quarter_plan.information_confirmed_date," +
-                "quarter_plan.quarter, quarter_plan.plan_year, quarter_plan.section_0" +
-                " FROM locomative_information" +
-                " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
-                " INNER JOIN fuel_type ON fuel_type.fuel_type_id = locomative_information.fuel_type_id" +
-                " INNER JOIN organization ON organization.org_id = quarter_plan.organization_id" +
-                " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
-                " INNER JOIN public.month ON month.month_id=quarter_plan.month_of_reprair" +
-                " WHERE quarter_plan.status_id != 2 AND quarter_plan.quarter=@quarter AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year" + limit;
+                string query = "SELECT quarter_plan.quarter_id, locomative_information.loco_id,locomative_information.name AS name_loco," +
+                    "fuel_type.type AS fuel_type," +
+                    "quarter_plan.locomative_number, organization.name, reprair_type.type, " +
+                    "month.month, quarter_plan.section_num, quarter_plan.information_confirmed_date," +
+                    "quarter_plan.quarter, quarter_plan.plan_year, quarter_plan.section_0,quarter_plan.status_id,quarter_plan.month_status_id,quarter_plan.month_of_reprair" +
+                    " FROM locomative_information" +
+                    " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
+                    " INNER JOIN fuel_type ON fuel_type.fuel_type_id = locomative_information.fuel_type_id" +
+                    " INNER JOIN organization ON organization.org_id = quarter_plan.organization_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
+                    " INNER JOIN public.month ON month.month_id=quarter_plan.month_of_reprair" +
+                    " WHERE quarter_plan.status_id != 2 AND quarter_plan.quarter=@quarter AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year" + limit;
 
 
 
-            conn.Open();
+                conn.Open();
 
-            using (NpgsqlCommand cmd = new(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@year", year);
-                cmd.Parameters.AddWithValue("@queryNum", queryNum);
-                cmd.Parameters.AddWithValue("@quarter", quarter);
-                using (NpgsqlDataAdapter da = new(cmd))
+                using (NpgsqlCommand cmd = new(query, conn))
                 {
-                    table = new DataTable();
-                    da.Fill(table);
+                    cmd.Parameters.AddWithValue("@year", year);
+                    cmd.Parameters.AddWithValue("@queryNum", queryNum);
+                    cmd.Parameters.AddWithValue("@quarter", quarter);
+                    using (NpgsqlDataAdapter da = new(cmd))
+                    {
+                        table = new DataTable();
+                        da.Fill(table);
+                    }
                 }
-            }
             }
             catch { }
             finally { conn.Close(); }
@@ -160,7 +165,7 @@ namespace Entities.AllContext.QuarterPlanContex
                 "fuel_type.type AS fuel_type," +
                 "quarter_plan.locomative_number, organization.name, reprair_type.type, " +
                 "month.month, quarter_plan.section_num, quarter_plan.information_confirmed_date," +
-                "quarter_plan.quarter, quarter_plan.plan_year, quarter_plan.section_0" +
+                "quarter_plan.quarter, quarter_plan.plan_year, quarter_plan.section_0,quarter_plan.status_id,quarter_plan.month_status_id,quarter_plan.month_of_reprair" +
                 " FROM locomative_information" +
                 " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
                 " INNER JOIN fuel_type ON fuel_type.fuel_type_id = locomative_information.fuel_type_id" +
@@ -252,6 +257,56 @@ namespace Entities.AllContext.QuarterPlanContex
             }
         }
 
+        public void UpdateQuarterPlanAdd(int id)
+        {
+            int status = (int)StatusEnum.addition;
+
+            try
+            {
+
+                string query = "UPDATE quarter_plan" +
+                    " SET status_id = @status_id" +
+                    " WHERE quarter_id = @quarter_id; ";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new(query, conn))
+                {
+
+                    cmd.Parameters.AddWithValue("@status_id", status);
+
+                    cmd.Parameters.AddWithValue("@quarter_id", id);
+                    var a = cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+        }
+        public void UpdateQuarterPlanMonthAdd(int id)
+        {
+            int status = (int)StatusEnum.addition;
+
+            try
+            {
+
+                string query = "UPDATE quarter_plan" +
+                    " SET month_status_id = @month_status_id" +
+                    " WHERE quarter_id = @quarter_id; ";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new(query, conn))
+                {
+
+                    cmd.Parameters.AddWithValue("@month_status_id", status);
+
+                    cmd.Parameters.AddWithValue("@quarter_id", id);
+                    var a = cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+        }
 
 
         //Two
@@ -262,40 +317,41 @@ namespace Entities.AllContext.QuarterPlanContex
         {
             List<QuarterPlanTwo> quarterPlans = new();
             DataTable table = null;
-            string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
-            string query = "SELECT locomative_information.loco_id,locomative_information.name,fuel_type.type AS fuel_type," +
-                "quarter_plan.locomative_number, quarter_plan.section_num, quarter_plan.quarter," +
-                "reprair_type.type AS reprair_type," +
-                "month.month," +
-                "quarter_plan_two.q_pt_id," +
-                "quarter_plan_two.section_1," +
-                "quarter_plan_two.section_2, quarter_plan_two.section_3, quarter_plan_two.section_4, " +
-                "quarter_plan_two.information_confirmed_date, quarter_plan.plan_year " +
-                " FROM fuel_type" +
-                " INNER JOIN locomative_information ON locomative_information.fuel_type_id = fuel_type.fuel_type_id" +
-                " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
-                " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
-                " INNER JOIN month ON month.month_id = quarter_plan.month_of_reprair" +
-                " INNER JOIN quarter_plan_two ON quarter_plan_two.quarter_id = quarter_plan.quarter_id" +
-                " WHERE quarter_plan_two.status_id != 2 AND quarter_plan.quarter = @quarter AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year" + limit;
-
-
-
-            conn.Open();
-
-            using (NpgsqlCommand cmd = new(query, conn))
+            try
             {
-                cmd.Parameters.AddWithValue("@year", year);
-                cmd.Parameters.AddWithValue("@queryNum", queryNum);
-                cmd.Parameters.AddWithValue("@quarter", quarter);
-                using (NpgsqlDataAdapter da = new(cmd))
+                string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
+                string query = "SELECT locomative_information.loco_id,locomative_information.name,fuel_type.type AS fuel_type," +
+                    "quarter_plan.locomative_number, quarter_plan.section_num, quarter_plan.quarter," +
+                    "reprair_type.type AS reprair_type," +
+                    "month.month," +
+                    "quarter_plan_two.q_pt_id," +
+                    "quarter_plan_two.section_1," +
+                    "quarter_plan_two.section_2, quarter_plan_two.section_3, quarter_plan_two.section_4, " +
+                    "quarter_plan_two.information_confirmed_date, quarter_plan.plan_year, quarter_plan_two.quarter_id" +
+                    " FROM fuel_type" +
+                    " INNER JOIN locomative_information ON locomative_information.fuel_type_id = fuel_type.fuel_type_id" +
+                    " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
+                    " INNER JOIN month ON month.month_id = quarter_plan.month_of_reprair" +
+                    " INNER JOIN quarter_plan_two ON quarter_plan_two.quarter_id = quarter_plan.quarter_id" +
+                    " WHERE quarter_plan_two.status_id != 2 AND quarter_plan.quarter = @quarter AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year" + limit;
+
+
+
+                conn.Open();
+
+                using (NpgsqlCommand cmd = new(query, conn))
                 {
-                    table = new DataTable();
-                    da.Fill(table);
+                    cmd.Parameters.AddWithValue("@year", year);
+                    cmd.Parameters.AddWithValue("@queryNum", queryNum);
+                    cmd.Parameters.AddWithValue("@quarter", quarter);
+                    using (NpgsqlDataAdapter da = new(cmd))
+                    {
+                        table = new DataTable();
+                        da.Fill(table);
+                    }
                 }
             }
-            try
-            { }
             catch { }
             finally { conn.Close(); }
 
@@ -322,7 +378,7 @@ namespace Entities.AllContext.QuarterPlanContex
                 "quarter_plan_two.q_pt_id," +
                 "quarter_plan_two.section_1," +
                 "quarter_plan_two.section_2, quarter_plan_two.section_3, quarter_plan_two.section_4, " +
-                "quarter_plan_two.information_confirmed_date, quarter_plan.plan_year " +
+                "quarter_plan_two.information_confirmed_date, quarter_plan.plan_year, quarter_plan_two.quarter_id " +
                 " FROM fuel_type" +
                 " INNER JOIN locomative_information ON locomative_information.fuel_type_id = fuel_type.fuel_type_id" +
                 " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
@@ -358,7 +414,7 @@ namespace Entities.AllContext.QuarterPlanContex
             return quarterPlan;
         }
 
-        public void CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser)
+        public string CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser)
         {
             if (quarterPlan != null)
             {
@@ -398,10 +454,15 @@ namespace Entities.AllContext.QuarterPlanContex
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
         }
 
         public void DeleteQuarterPlanTwo(int id, int loginiduser)

@@ -10,7 +10,6 @@ namespace Entities.DTO.MonthPlanOne
     public class MonthPlanOneCreateDTO
     {
         public int quarter_id { get; set; }
-        public int designations_id { get; set; }
-        public int section_true { get; set; }
+       
     }
 }

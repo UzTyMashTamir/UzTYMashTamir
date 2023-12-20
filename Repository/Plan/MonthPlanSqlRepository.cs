@@ -29,9 +29,9 @@ namespace Repository.Plan
 
 
         //Month One
-        public void CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser)
+        public string CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser)
         {
-            _context.CreateMonthPlanOne(monthPlan, loginiduser);
+            return _context.CreateMonthPlanOne(monthPlan, loginiduser);
         }
 
         public void DeleteMonthPlanOne(int id, int loginiduser)

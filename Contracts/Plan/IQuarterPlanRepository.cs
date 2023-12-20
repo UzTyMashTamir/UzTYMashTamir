@@ -13,11 +13,13 @@ namespace Contracts.Plan
 
         public QuarterPlan GetQuarterPlanByID(int id);
 
-        public void CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser);
+        public string CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser);
 
         public void UpdateQuarterPlan(int id, QuarterPlan quarterPlan, int loginiduser);
 
         public void DeleteQuarterPlan(int id, int loginiduser);
+        public void UpdateQuarterPlanAdd(int id);
+        public void UpdateQuarterPlanMonthAdd(int id);
 
 
 
@@ -29,7 +31,7 @@ namespace Contracts.Plan
 
         public QuarterPlanTwo GetQuarterPlanTwoByID(int id);
 
-        public void CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser);
+        public string CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser);
 
         public void UpdateQuarterPlanTwo(int id, QuarterPlanTwo quarterPlan, int loginiduser);
 

@@ -19,9 +19,9 @@ namespace Repository.Plan
         }
 
 
-        public void CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser)
+        public string CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser)
         {
-            _context.CreateWeekluPlan(weeklyPlan, loginiduser);
+            return _context.CreateWeekluPlan(weeklyPlan, loginiduser);
         }
 
         public void DeleteWeekluPlan(int id, int loginiduser)

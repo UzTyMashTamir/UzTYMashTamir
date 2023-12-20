@@ -18,7 +18,7 @@ namespace Entities.AllContext.DaylyPlanContex
 
         }
 
-        public void CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser)
+        public string CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser)
         {
             if (daylyPlan != null)
             {
@@ -56,10 +56,16 @@ namespace Entities.AllContext.DaylyPlanContex
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
+        
         }
 
         public void DeleteDaylyPlan(int id, int loginiduser)
@@ -96,7 +102,7 @@ namespace Entities.AllContext.DaylyPlanContex
                 string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
                 string query = "SELECT dayly_plan.dayly_id, locomative_information.loco_id, locomative_information.name, locomative_information.fuel_type_id," +
                     "fuel_type.type AS fuel_type, dayly_plan.locomative_number, reprair_type.type, organization.org_id," +
-                    "organization.name, dayly_plan.do_work, dayly_plan.comment, dayly_plan.day_date" +
+                    "organization.name AS org_name, dayly_plan.do_work, dayly_plan.comment, dayly_plan.day_date" +
                     " FROM fuel_type" +
                     " INNER JOIN locomative_information ON locomative_information.fuel_type_id = fuel_type.fuel_type_id" +
                     " INNER JOIN dayly_plan ON dayly_plan.loco_id = locomative_information.loco_id" +

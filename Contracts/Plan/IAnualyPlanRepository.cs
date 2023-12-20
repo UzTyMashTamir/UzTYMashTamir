@@ -14,11 +14,12 @@ namespace Contracts.Plan
 
         public AnualyPlan GetAnualyPlanByID(int id);
 
-        public void CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser);
+        public string CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser);
 
         public void UpdateAnualyPlan(int id, AnualyPlan anualyPlan, int loginiduser);
 
         public void DeleteAnualyPlan(int id, int loginiduser);
+        public void UpdateAnualyPlanOneAdd(int id);
 
 
         //Anualy Plan One
@@ -27,7 +28,7 @@ namespace Contracts.Plan
 
         public AnualyPlan GetAnualyPlanOneByID(int id);
 
-        public void CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser);
+        public string CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser);
 
         public void UpdateAnualyOnePlan(int id, AnualyPlan anualyPlan, int loginiduser);
 

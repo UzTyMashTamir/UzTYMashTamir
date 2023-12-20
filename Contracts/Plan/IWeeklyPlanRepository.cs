@@ -13,7 +13,7 @@ namespace Contracts.Plan
 
         public WeeklyPlan GetWeekluPlanByID(int id);
 
-        public void CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser);
+        public string CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser);
 
         public void UpdateWeekluPlan(int id, WeeklyPlan weeklyPlan, int loginiduser);
 

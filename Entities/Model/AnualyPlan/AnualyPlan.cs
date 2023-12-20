@@ -75,6 +75,7 @@ namespace Entities.Model.AnualyPlan
             };
             sections_reprair_number = int.Parse("" + row["sections_repraer_number"]);
             a_o_id = int.Parse("" + row["a_o_id"]);
+            anualy_id = int.Parse("" + row["anualy_id"]);
             reprairtype = row["type"].ToString(); 
             information_confirmed_date = Convert.ToDateTime(row["information_confirmed_date"]);
             month_plan = new MonthPlan

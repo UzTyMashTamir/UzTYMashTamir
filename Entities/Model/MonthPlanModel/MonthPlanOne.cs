@@ -66,19 +66,25 @@ namespace Entities.Model.MonthPlanModel
                 quarter = 0,
                 plan_year = DateTime.Now,
             };
-            designations = new Designations
+            try
             {
-                designations_id = 0,
-                work_done = "" + row["work_done"],
-                unit_of_measure = "" + row["unit_of_measure"],
-                organization=new OrganizationType
+                designations = new Designations
                 {
-                    org_id= int.Parse("" + row["org_id"]),
-                    type= "" + row["name"]
-                }
+                    designations_id = 0,
+                    work_done = "" + row["work_done"],
+                    unit_of_measure = "" + row["unit_of_measure"],
+                    organization = new OrganizationType
+                    {
+                        org_id = int.Parse("" + row["org_id"]),
+                        type = "" + row["name"]
+                    }
 
-            };
-            section_true = int.Parse("" + row["section_true"]);
+                };
+                section_true = int.Parse("" + row["section_true"]);
+            }
+            catch 
+            {           
+            }
         }
 
     }

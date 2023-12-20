@@ -40,13 +40,13 @@ namespace Entities.Model.DaylyPlanModel
                 name = ("" + row["name"]).ToString(),
                 fuel_type = (FuelType)(int.Parse("" + row["fuel_type_id"])),
             };
-            fuel_type = ("" + row["type"]).ToString();
+            fuel_type = ("" + row["fuel_type"]).ToString();
             locomative_number = ("" + row["locomative_number"]).ToString();
             reprair_type = ("" + row["type"]);
             organization = new OrganizationType
             {
                 org_id= int.Parse("" + row["org_id"]),
-                type= "" + row["name"]
+                type= "" + row["org_name"]
             };
             do_work = "" + row["do_work"];
             comment = "" + row["comment"];

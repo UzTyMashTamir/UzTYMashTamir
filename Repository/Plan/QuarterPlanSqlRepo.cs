@@ -30,9 +30,9 @@ namespace Repository.Plan
             return quarterPlan;
         }
 
-        public void CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser)
+        public string CreateQuarterPlan(QuarterPlan quarterPlan, int loginiduser)
         {
-            _context.CreateQuarterPlan(quarterPlan, loginiduser);
+            return _context.CreateQuarterPlan(quarterPlan, loginiduser);
         }
         
         public void UpdateQuarterPlan(int id, QuarterPlan quarterPlan, int loginiduser)
@@ -44,8 +44,15 @@ namespace Repository.Plan
         {
             _context.DeleteQuarterPlan(id, loginiduser);
         }
-       
 
+        public void UpdateQuarterPlanAdd(int id)
+        {
+            _context.UpdateQuarterPlanAdd(id);
+        }
+        public void UpdateQuarterPlanMonthAdd(int id)
+        {
+            _context.UpdateQuarterPlanMonthAdd(id);
+        }
 
 
         //Two
@@ -62,9 +69,9 @@ namespace Repository.Plan
             return quarterPlanTwo;
         }
 
-        public void CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser)
+        public string CreateQuarterPlanTwo(QuarterPlanTwo quarterPlan, int loginiduser)
         {
-            _context.CreateQuarterPlanTwo(quarterPlan, loginiduser);
+            return _context.CreateQuarterPlanTwo(quarterPlan, loginiduser);
         }
         
         public void DeleteQuarterPlanTwo(int id, int loginiduser)
@@ -77,5 +84,6 @@ namespace Repository.Plan
             _context.UpdateQuarterPlanTwo(id, quarterPlan, loginiduser);
         }
 
+        
     }
 }

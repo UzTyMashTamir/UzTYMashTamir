@@ -3,6 +3,7 @@ using Contracts.Plan;
 using Entities.DTO.MonthPlan;
 using Entities.DTO.MonthPlanOne;
 using Entities.Model.MonthPlanModel;
+using Entities.Model.QuarterPlan;
 using Entities.Model.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -20,11 +21,13 @@ namespace WebAPI.Controllers
     {
         private readonly IMonthPlanRepository _repository;
         private readonly IMapper _mapper;
+        private readonly IQuarterPlanRepository _repositoryQuarter;
         private static int onlineIdUser = LoginUserId.loginId;
-        public MonthPlanController(IMonthPlanRepository repository, IMapper mapper)
+        public MonthPlanController(IMonthPlanRepository repository, IMapper mapper, IQuarterPlanRepository quarter)
         {
             _repository = repository;
             _mapper = mapper;
+            _repositoryQuarter = quarter;
         }
 
         [Authorize(Roles = "Admin")]
@@ -43,18 +46,44 @@ namespace WebAPI.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost("createmonthplanone")]
-        public IActionResult CreateMonthPlanOne(MonthPlanOneCreateDTO planCreateDTO)
+        public IActionResult CreateMonthPlanOne(int year, int quarter,int month)
         {
-            if (planCreateDTO == null)
+            int queryNum = 0;
+            IEnumerable<QuarterPlan> result = _repositoryQuarter.GetAllYearQuarterPlan(year, quarter, queryNum);
+            IEnumerable<MonthPlanOne> planOnes = _repository.GetAllYearMonthPlanOne(year, quarter, month, queryNum);
+
+            foreach (var item in result)
             {
-                return NoContent();
+                if (item.month_status != StatusEnum.addition && item.month_of_reprair==month)
+                {
+                    int k = 0;
+                    foreach (var item1 in planOnes)
+                    {
+                        if (item1.quarter_id == item.quarter_id)
+                        {
+                            _repositoryQuarter.UpdateQuarterPlanMonthAdd(item.quarter_id);
+                            k++;
+                        }
+                    }
+
+                    if (k == 0)
+                    {
+                        MonthPlanOneCreateDTO twoCreateDTO = new MonthPlanOneCreateDTO
+                        {
+                            quarter_id = item.quarter_id,
+                            
+                        };
+                        var quarterPlan = _mapper.Map<MonthPlanOne>(twoCreateDTO);
+                        _repository.CreateMonthPlanOne(quarterPlan, onlineIdUser);
+                        _repositoryQuarter.UpdateQuarterPlanMonthAdd(twoCreateDTO.quarter_id);
+                    }
+                }
             }
 
-            var monthPlanModel = _mapper.Map<MonthPlanOne>(planCreateDTO);
 
-            _repository.CreateMonthPlanOne(monthPlanModel, onlineIdUser);
-
-            return Created("","");
+           
+                return Created("", "");
+            
         }
 
 

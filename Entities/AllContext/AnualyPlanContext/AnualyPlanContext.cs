@@ -15,7 +15,7 @@ namespace Entities.AllContext.AnualyPlanContext
     public class AnualyPlanContext : DatabaseConnection
     {
         //Anualy Plan
-        public void CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser)
+        public string CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser)
         {
             if (anualyPlan != null)
             {
@@ -52,10 +52,15 @@ namespace Entities.AllContext.AnualyPlanContext
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
         }
 
         public void DeleteAnualyPlan(int id, int loginiduser)
@@ -89,34 +94,35 @@ namespace Entities.AllContext.AnualyPlanContext
 
             List<AnualyPlan> anualyPlans = new();
             DataTable table = null;
-            string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
-            string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, " +
-                "locomative_information.name,locomative_information.fuel_type_id," +
-                "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date," +
-                "anualy_plan.information_entered_date," +
-                "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
-                "anualy_plan.plan_year, reprair_type.type, anualy_plan.all_price FROM locomative_information" +
-                " INNER JOIN" +
-                " anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
-                " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id " +
-                " WHERE anualy_plan.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
-
-
-
-            conn.Open();
-
-            using (NpgsqlCommand cmd = new(query, conn))
+            try
             {
-                cmd.Parameters.AddWithValue("@year", year);
-                cmd.Parameters.AddWithValue("@queryNum", queryNum);
-                using (NpgsqlDataAdapter da = new(cmd))
+                string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
+                string query = "SELECT anualy_plan.anualy_id ,locomative_information.loco_id, " +
+                    "locomative_information.name,locomative_information.fuel_type_id," +
+                    "anualy_plan.sections_repraer_number, anualy_plan.information_confirmed_date," +
+                    "anualy_plan.information_entered_date," +
+                    "anualy_plan.information_modified_date, anualy_plan.status_id, anualy_plan.data_log_id," +
+                    "anualy_plan.plan_year, reprair_type.type, anualy_plan.all_price FROM locomative_information" +
+                    " INNER JOIN" +
+                    " anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
+                    " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id " +
+                    " WHERE anualy_plan.status_id != 2 AND EXTRACT(YEAR FROM anualy_plan.plan_year) = @year" + limit;
+
+
+
+                conn.Open();
+
+                using (NpgsqlCommand cmd = new(query, conn))
                 {
-                    table = new DataTable();
-                    da.Fill(table);
+                    cmd.Parameters.AddWithValue("@year", year);
+                    cmd.Parameters.AddWithValue("@queryNum", queryNum);
+                    using (NpgsqlDataAdapter da = new(cmd))
+                    {
+                        table = new DataTable();
+                        da.Fill(table);
+                    }
                 }
             }
-            try
-            { }
             catch { }
             finally { conn.Close(); }
 
@@ -219,12 +225,35 @@ namespace Entities.AllContext.AnualyPlanContext
             }
         }
 
+        public void UpdateAnualyPlanOneAdd(int id)
+        {
+            try
+            {
+                int status = (int)StatusEnum.addition;
 
+                string query = "UPDATE anualy_plan " +
+                "SET status_id = @status_id" +
+                " WHERE anualy_id = @anualy_id; ";
+
+                conn.Open();
+                using (NpgsqlCommand cmd = new(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@anualy_id", id);
+                    cmd.Parameters.AddWithValue("@status_id", status);
+
+                    var a = cmd.ExecuteNonQuery();
+
+                }
+            }
+            catch { }
+            finally { conn.Close(); }
+
+        }
 
         //AnualyPlan Plan One
 
 
-        public void CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser)
+        public string CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser)
         {
             if (anualyPlan != null)
             {
@@ -237,7 +266,7 @@ namespace Entities.AllContext.AnualyPlanContext
                         "information_confirmed_date, status_id, data_log_id, yanvar, " +
                         "fevral, mart, aprel, may, iyun, iyul, avgust, sentyabr, oktyabr, noyabr, " +
                         "dekabr) " +
-                        $"VALUES(DEFAULT,'{anualyPlan.a_o_id}','{anualyPlan.information_confirmed_date}','{anualyPlan.status}','{anualyPlan.data_log}','{anualyPlan.month_plan.Yanvar}'," +
+                        $"VALUES(DEFAULT,'{anualyPlan.anualy_id}','{anualyPlan.information_confirmed_date}','{anualyPlan.status}','{anualyPlan.data_log}','{anualyPlan.month_plan.Yanvar}'," +
                         $"'{anualyPlan.month_plan.Fevral}','{anualyPlan.month_plan.Mart}','{anualyPlan.month_plan.Aprel}','{anualyPlan.month_plan.May}'," +
                         $"'{anualyPlan.month_plan.Iyun}','{anualyPlan.month_plan.Iyul}','{anualyPlan.month_plan.Avgust}','{anualyPlan.month_plan.Sentyabr}','{anualyPlan.month_plan.Oktyabr}','{anualyPlan.month_plan.Noyabr}','{anualyPlan.month_plan.Dekabr}'" +
                         "); ";
@@ -274,10 +303,16 @@ namespace Entities.AllContext.AnualyPlanContext
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
+
         }
 
         public void DeleteAnualyOnePlan(int id, int loginiduser)
@@ -319,7 +354,7 @@ namespace Entities.AllContext.AnualyPlanContext
                     "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, anualy_plan_one.aprel," +
                     "anualy_plan_one.may, anualy_plan_one.iyun, anualy_plan_one.iyul, anualy_plan_one.avgust, " +
                     "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, " +
-                    "anualy_plan_one.dekabr" +
+                    "anualy_plan_one.dekabr,anualy_plan_one.anualy_id" +
                     " FROM locomative_information" +
                     " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
                     " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
@@ -366,7 +401,7 @@ namespace Entities.AllContext.AnualyPlanContext
                     "anualy_plan_one.yanvar, anualy_plan_one.fevral, anualy_plan_one.mart, anualy_plan_one.aprel," +
                     "anualy_plan_one.may, anualy_plan_one.iyun, anualy_plan_one.iyul, anualy_plan_one.avgust, " +
                     "anualy_plan_one.sentyabr, anualy_plan_one.oktyabr, anualy_plan_one.noyabr, " +
-                    "anualy_plan_one.dekabr" +
+                    "anualy_plan_one.dekabr,anualy_plan_one.anualy_id" +
                     " FROM locomative_information" +
                     " INNER JOIN anualy_plan ON anualy_plan.locomative_id = locomative_information.loco_id" +
                     " INNER JOIN reprair_type ON reprair_type.reprair_id = anualy_plan.reprair_id" +
@@ -502,6 +537,9 @@ namespace Entities.AllContext.AnualyPlanContext
             }
             return anualyPlans;
         }
+
+
+
 
     }
 }

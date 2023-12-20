@@ -42,18 +42,18 @@ E:\UzTYMashTamirSolution  12.11.2023  1735\Entities\obj\Debug\net5.0\Entities.dl
 E:\UzTYMashTamirSolution  12.11.2023  1735\Entities\obj\Debug\net5.0\ref\Entities.dll
 E:\UzTYMashTamirSolution  12.11.2023  1735\Entities\obj\Debug\net5.0\Entities.pdb
 E:\UzTYMashTamirSolution  12.11.2023  1735\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.deps.json
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.runtimeconfig.json
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.runtimeconfig.dev.json
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.dll
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\ref\Entities.dll
-e:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.pdb
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.dll
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\ref\Entities.dll
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.pdb
-e:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.deps.json
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.runtimeconfig.json
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.runtimeconfig.dev.json
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.dll
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\ref\Entities.dll
+E:\UzTYMashTamirSolution\Entities\bin\Debug\net5.0\Entities.pdb
 E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.dll
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\ref\Entities.dll
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.pdb
+E:\UzTYMashTamirSolution\Entities\obj\Debug\net5.0\Entities.genruntimeconfig.cache

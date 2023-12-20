@@ -38,14 +38,21 @@ namespace WebAPI.Controllers
             }
             var daylyPlanModel = _mapper.Map<DaylyPlan>(planCreateDTO);
 
-            _repository.CreateDaylyPlan(daylyPlanModel, onlineIdUser);
+            var a=_repository.CreateDaylyPlan(daylyPlanModel, onlineIdUser);
 
-            return Created("", "");
+            if (a == "Created")
+            {
+                return Created("", a);
+            }
+            else
+            {
+                return new NoContentResult();
+            }
         }
 
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")
         [HttpGet("getalldaylyplan")]
         public IActionResult GetDaylyPlan(DateTime day_date, int queryNum)
         {
@@ -56,7 +63,7 @@ namespace WebAPI.Controllers
 
 
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpGet("getbyiddaylyplan/{id}")]
         public IActionResult GetDaylyPlanById(int id)
         {

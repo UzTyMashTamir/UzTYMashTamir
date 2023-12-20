@@ -68,7 +68,7 @@ namespace Entities.AllContext.MonthPlanContext
 
 
         //Month One
-        public void CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser)
+        public string CreateMonthPlanOne(MonthPlanOne monthPlan, int loginiduser)
         {
             if (monthPlan != null)
             {
@@ -76,32 +76,35 @@ namespace Entities.AllContext.MonthPlanContext
                 monthPlan.status = StatusEnum.active;
 
 
-                
-                    string query1 = "INSERT INTO month_plan(" +
-                        "month_id, quarter_id, designations_id, section_true)" +
-                        $"VALUES(DEFAULT,{monthPlan.quarter_id},{monthPlan.designations_id},{monthPlan.section_true}); ";
-                    monthPlan.data_log = logWriting(loginiduser, query1);
+
+                string query1 = "INSERT INTO month_plan(" +
+                    "month_id, quarter_id)" +
+                    $"VALUES(DEFAULT,{monthPlan.quarter_id}); ";
+                monthPlan.data_log = logWriting(loginiduser, query1);
 
                 try
                 {
 
                     string query = "INSERT INTO month_plan(" +
-                        "month_id, quarter_id, designations_id, section_true, status_id, data_log_id)" +
-                        " VALUES (DEFAULT, @quarter_id, @designations_id, @section_true, @status_id, @data_log_id); ";
+                        "month_id, quarter_id,status_id, data_log_id)" +
+                        " VALUES (DEFAULT, @quarter_id, @status_id, @data_log_id);";
                     conn.Open();
                     using (NpgsqlCommand cmd = new(query, conn))
                     {
-                        cmd.Parameters.AddWithValue("@quarter_id", monthPlan.quarter_id);                       
-                        cmd.Parameters.AddWithValue("@designations_id", monthPlan.designations_id);                       
-                        cmd.Parameters.AddWithValue("@section_true", monthPlan.section_true);                       
-                        cmd.Parameters.AddWithValue("@status_id", (int)monthPlan.status);                       
-                        cmd.Parameters.AddWithValue("@data_log_id", monthPlan.data_log);                       
+                        cmd.Parameters.AddWithValue("@quarter_id", monthPlan.quarter_id);
+                        cmd.Parameters.AddWithValue("@status_id", (int)monthPlan.status);
+                        cmd.Parameters.AddWithValue("@data_log_id", monthPlan.data_log);
                         var a = cmd.ExecuteNonQuery();
                     }
-                 }
-                catch { }
-                finally { conn.Close(); }
+                    return "Created";
+                }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
         }
 
         public void DeleteMonthPlanOne(int id, int loginiduser)
@@ -134,10 +137,49 @@ namespace Entities.AllContext.MonthPlanContext
             List<MonthPlanOne> monthPlans = new();
             DataTable table = null;
 
+
+            try
+            {
+                string query = "SELECT month_plan.month_id,quarter_plan.quarter_id," +
+                "month_plan.section_true," +
+                "locomative_information.loco_id,locomative_information.name AS name_loco," +
+                "fuel_type.type AS fuel_type,quarter_plan.locomative_number," +
+                "reprair_type.type FROM locomative_information" +
+                " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
+                " INNER JOIN fuel_type ON fuel_type.fuel_type_id = locomative_information.fuel_type_id" +
+                " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
+                " INNER JOIN month_plan ON month_plan.quarter_id = quarter_plan.quarter_id" +
+                " WHERE month_plan.status_id != 2 AND quarter_plan.quarter = @quarter AND quarter_plan.month_of_reprair = @month" +
+                " AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year AND month_plan.designations_id IS NULL";
+            conn.Open();
+
+            using (NpgsqlCommand cmd = new(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@year", year);
+                cmd.Parameters.AddWithValue("@quarter", quarter);
+                cmd.Parameters.AddWithValue("@month", month);
+                using (NpgsqlDataAdapter da = new(cmd))
+                {
+                    table = new DataTable();
+                    da.Fill(table);
+                }
+            }
+             }
+            catch { }
+            finally { conn.Close(); }
+
+            if (table != null && table.Rows.Count > 0)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    MonthPlanOne monthPlan = new(row, 0);
+                    monthPlans.Add(monthPlan);
+                }
+            }
             try
             {
                 string limit = queryNum != 0 ? " LIMIT @queryNum;" : ";";
-                string query = "SELECT month_plan.month_id,quarter_plan.quarter_id," +
+                string query1 = "SELECT month_plan.month_id,quarter_plan.quarter_id," +
                     "organization.org_id, organization.name,designations.work_done," +
                     "designations.unit_of_measure,month_plan.section_true," +
                     "locomative_information.loco_id,locomative_information.name AS name_loco," +
@@ -153,7 +195,7 @@ namespace Entities.AllContext.MonthPlanContext
                     " AND EXTRACT(YEAR FROM quarter_plan.plan_year) = @year" + limit;
                 conn.Open();
 
-                using (NpgsqlCommand cmd = new(query, conn))
+                using (NpgsqlCommand cmd = new(query1, conn))
                 {
                     cmd.Parameters.AddWithValue("@year", year);
                     cmd.Parameters.AddWithValue("@queryNum", queryNum);
@@ -173,10 +215,11 @@ namespace Entities.AllContext.MonthPlanContext
             {
                 foreach (DataRow row in table.Rows)
                 {
-                    MonthPlanOne monthPlan = new(row,0);
+                    MonthPlanOne monthPlan = new(row, 0);
                     monthPlans.Add(monthPlan);
                 }
             }
+
             return monthPlans;
         }
 
@@ -219,7 +262,44 @@ namespace Entities.AllContext.MonthPlanContext
             {
                 foreach (DataRow row in table.Rows)
                 {
-                    monthPlan = new(row,0);
+                    monthPlan = new(row, 0);
+                }
+            }
+            else
+            {
+                string query1 = "SELECT month_plan.month_id,quarter_plan.quarter_id," +
+                "month_plan.section_true," +
+                "locomative_information.loco_id,locomative_information.name AS name_loco," +
+                "fuel_type.type AS fuel_type,quarter_plan.locomative_number," +
+                "reprair_type.type FROM locomative_information" +
+                " INNER JOIN quarter_plan ON quarter_plan.loco_id = locomative_information.loco_id" +
+                " INNER JOIN fuel_type ON fuel_type.fuel_type_id = locomative_information.fuel_type_id" +
+                " INNER JOIN reprair_type ON reprair_type.reprair_id = quarter_plan.reprair_id" +
+                " INNER JOIN month_plan ON month_plan.quarter_id = quarter_plan.quarter_id" +
+                " WHERE month_plan.status_id != 2 AND month_plan.month_id=@month_id;";
+                try
+                {
+                    conn.Open();
+
+                    using (NpgsqlCommand cmd = new(query1, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@month_id", id);
+                        using (NpgsqlDataAdapter da = new(cmd))
+                        {
+                            table = new DataTable();
+                            da.Fill(table);
+                        }
+                    }
+                }
+                catch { }
+                finally { conn.Close(); }
+
+                if (table != null && table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        monthPlan = new(row, 0);
+                    }
                 }
             }
 
@@ -255,7 +335,7 @@ namespace Entities.AllContext.MonthPlanContext
                         cmd.Parameters.AddWithValue("@designations_id", monthPlan.designations_id);
                         cmd.Parameters.AddWithValue("@section_true", monthPlan.section_true);
                         cmd.Parameters.AddWithValue("@status_id", (int)monthPlan.status);
-                        cmd.Parameters.AddWithValue("@data_log_id", monthPlan.data_log);                       
+                        cmd.Parameters.AddWithValue("@data_log_id", monthPlan.data_log);
                         cmd.Parameters.AddWithValue("@month_id", id);
                         var a = cmd.ExecuteNonQuery();
 

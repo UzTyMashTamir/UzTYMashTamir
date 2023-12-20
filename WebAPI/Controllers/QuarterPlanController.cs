@@ -40,11 +40,16 @@ namespace WebAPI.Controllers
 
             var quarterPlanModel = _mapper.Map<QuarterPlan>(planCreateDTO);
 
-            _repository.CreateQuarterPlan(quarterPlanModel, onlineIdUser);
+            var a=_repository.CreateQuarterPlan(quarterPlanModel, onlineIdUser);
 
-            var quarterPlanReadDto = _mapper.Map<QuarterPlanReadDTO>(quarterPlanModel);
-
-            return Created("", quarterPlanReadDto);
+            if (a == "Created")
+            {
+                return Created("", a);
+            }
+            else
+            {
+                return new NoContentResult();
+            }
         }
 
 
@@ -118,20 +123,47 @@ namespace WebAPI.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpPost("createquareterplantwo")]
-        public IActionResult CreateQuarterPlanTwo(QuarterPlanTwoCreateDTO planCreateDTO)
+        public IActionResult CreateQuarterPlanTwo(int year, int quarter)
         {
-            if (planCreateDTO == null)
+            int queryNum = 0;
+            IEnumerable<QuarterPlan> quarters = _repository.GetAllYearQuarterPlan(year, quarter, queryNum);
+            IEnumerable<QuarterPlanTwo> planTwos = _repository.GetAllYearQuarterPlanTwo(year, quarter, queryNum);
+
+            foreach (var item in quarters)
             {
-                return NoContent();
+                if (item.status != StatusEnum.addition)
+                {
+                    int k = 0;
+                    foreach (var item1 in planTwos)
+                    {
+                        if (item1.quarter_id == item.quarter_id)
+                        {
+                            _repository.UpdateQuarterPlanAdd(item.quarter_id);
+                            k++;
+                        }
+                    }
+
+                    if (k == 0)
+                    {
+                        QuarterPlanTwoCreateDTO twoCreateDTO = new QuarterPlanTwoCreateDTO
+                        {
+                            quarter_id=item.quarter_id,
+                            section_1=0,
+                            section_2=0,
+                            section_3=0,
+                            section_4=0,
+                            information_confirmed_date=item.information_confirmed_date
+                        };
+                        var quarterPlan = _mapper.Map<QuarterPlanTwo>(twoCreateDTO);
+                        _repository.CreateQuarterPlanTwo(quarterPlan, onlineIdUser);
+                        _repository.UpdateQuarterPlanAdd(twoCreateDTO.quarter_id);
+                    }
+                }
             }
 
-            var quarterPlanModel = _mapper.Map<QuarterPlanTwo>(planCreateDTO);
 
-            _repository.CreateQuarterPlanTwo(quarterPlanModel, onlineIdUser);
-
-            var quarterPlanReadDto = _mapper.Map<QuarterPlanTwoReadDTO>(quarterPlanModel);
-
-            return Created("", quarterPlanReadDto);
+            return Created("", "");
+           
         }
 
 

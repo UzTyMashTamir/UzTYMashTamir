@@ -38,9 +38,16 @@ namespace WebAPI.Controllers
             }
             var weeklyPlanModel = _mapper.Map<WeeklyPlan>(planCreateDTO);
 
-            _repository.CreateWeekluPlan(weeklyPlanModel, onlineIdUser);
+            var a=_repository.CreateWeekluPlan(weeklyPlanModel, onlineIdUser);
 
-            return Created("", "");
+            if (a == "Created")
+            {
+                return Created("", a);
+            }
+            else
+            {
+                return new NoContentResult();
+            }
         }
 
 

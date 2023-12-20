@@ -19,7 +19,7 @@ namespace Entities.AllContext.WeeklyPlanContex
         }
 
 
-        public void CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser)
+        public string CreateWeekluPlan(WeeklyPlan weeklyPlan, int loginiduser)
         {
             if (weeklyPlan != null)
             {
@@ -54,10 +54,15 @@ namespace Entities.AllContext.WeeklyPlanContex
                         var a = cmd.ExecuteNonQuery();
 
                     }
+                    return "Created";
                 }
-                catch { }
-                finally { conn.Close(); }
+                catch (Exception ex) { return ex + ""; }
+                finally
+                {
+                    conn.Close();
+                }
             }
+            return "";
         }
 
         public void DeleteWeekluPlan(int id, int loginiduser)

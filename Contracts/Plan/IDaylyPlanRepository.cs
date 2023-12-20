@@ -13,7 +13,7 @@ namespace Contracts.Plan
 
         public DaylyPlan GetDaylyPlanByID(int id);
 
-        public void CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser);
+        public string CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser);
 
         public void UpdateDaylyPlan(int id, DaylyPlan daylyPlan, int loginiduser);
 

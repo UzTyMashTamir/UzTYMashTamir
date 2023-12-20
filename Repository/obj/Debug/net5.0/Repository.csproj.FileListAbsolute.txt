@@ -49,20 +49,20 @@ E:\UzTYMashTamirSolution  12.11.2023  1735\Repository\obj\Debug\net5.0\Repositor
 E:\UzTYMashTamirSolution  12.11.2023  1735\Repository\obj\Debug\net5.0\Repository.dll
 E:\UzTYMashTamirSolution  12.11.2023  1735\Repository\obj\Debug\net5.0\ref\Repository.dll
 E:\UzTYMashTamirSolution  12.11.2023  1735\Repository\obj\Debug\net5.0\Repository.pdb
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.deps.json
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.dll
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\ref\Repository.dll
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.pdb
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Contracts.dll
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Entities.dll
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Contracts.pdb
-e:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Entities.pdb
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.dll
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\ref\Repository.dll
-e:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.pdb
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.deps.json
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.dll
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\ref\Repository.dll
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Repository.pdb
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Contracts.dll
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Entities.dll
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Contracts.pdb
+E:\UzTYMashTamirSolution\Repository\bin\Debug\net5.0\Entities.pdb
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.AssemblyReference.cache
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.AssemblyInfoInputs.cache
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.AssemblyInfo.cs
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.CoreCompileInputs.cache
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.csproj.CopyComplete
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.dll
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\ref\Repository.dll
+E:\UzTYMashTamirSolution\Repository\obj\Debug\net5.0\Repository.pdb

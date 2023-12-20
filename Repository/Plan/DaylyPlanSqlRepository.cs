@@ -19,9 +19,9 @@ namespace Repository.Plan
         }
 
 
-        public void CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser)
+        public string CreateDaylyPlan(DaylyPlan daylyPlan, int loginiduser)
         {
-            _context.CreateDaylyPlan(daylyPlan, loginiduser);
+            return _context.CreateDaylyPlan(daylyPlan, loginiduser);
         }
 
         public void DeleteDaylyPlan(int id, int loginiduser)

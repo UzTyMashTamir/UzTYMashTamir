@@ -32,6 +32,7 @@ namespace Entities.Model.QuarterPlan
         public QuarterPlanTwo(DataRow row)
         {
             q_pt_id = int.Parse("" + row["q_pt_id"]);
+            quarter_id = int.Parse("" + row["quarter_id"]);
             quarter_plan = new QuarterPlanReaded
             {
                 locomative_name = new LocomativeInformation

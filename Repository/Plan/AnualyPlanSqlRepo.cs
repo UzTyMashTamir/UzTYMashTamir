@@ -20,9 +20,9 @@ namespace Repository.Plan
 
 
         //Anualy Plan
-        public void CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser)
+        public string CreateAnualyPlan(AnualyPlan anualyPlan, int loginiduser)
         {
-            _context.CreateAnualyPlan(anualyPlan, loginiduser);
+            return _context.CreateAnualyPlan(anualyPlan, loginiduser);
         }
 
         public void DeleteAnualyPlan(int id, int loginiduser)
@@ -47,14 +47,19 @@ namespace Repository.Plan
             _context.UpdateAnualyPlan(id, anualyPlan, loginiduser);
         }
 
+        public void UpdateAnualyPlanOneAdd(int id)
+        {
+            _context.UpdateAnualyPlanOneAdd(id);
+        }
+
 
 
         //AnualyPlan Plan One
 
 
-        public void CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser)
+        public string CreateAnualyOnePlan(AnualyPlan anualyPlan, int loginiduser)
         {
-            _context.CreateAnualyOnePlan(anualyPlan, loginiduser);
+           return _context.CreateAnualyOnePlan(anualyPlan, loginiduser);
         }
 
         public void DeleteAnualyOnePlan(int id, int loginiduser)
@@ -88,5 +93,7 @@ namespace Repository.Plan
             var anualyPlanTwo = _context.GetAllYearAnualyTwoPlan(year,queryNum);
             return anualyPlanTwo;
         }
+
+        
     }
 }
